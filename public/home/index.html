@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../imgs/logo.png" type="image/x-icon">
+    <title>Quote Sauce</title>
+</head>
+<body>
+    <div class="center">
+        <h1 style="font-size: 4em;">Quote Sauce</h1>
+        <form id="name-form">
+            <input type="text" id="name-input" placeholder="Pseudo" required minlength="3" maxlength="10">
+            <br><br>
+            <input type="submit" value="Mettre à jour">
+            <p class="messasge" id="name-message">ㅤ</p>
+        </form>
+        <form id="code-form">
+            <h2>Rejoindre une partie</h2>
+            <input type="text" id="code-input" placeholder="Code" required minlength="9" maxlength="9" autocomplete="off">
+            <br><br>
+            <input type="submit" value="Rejoindre">
+            <p class="messasge" id="code-message">ㅤ</p>
+        </form>
+        <form id="create-form">
+            <h2>Créer une partie</h2>
+            <input type="submit" value="Créer">
+            <p class="messasge" id="create-message">ㅤ</p>
+        </form>
+    </div>
+</body>
+<script src="/jquery/jquery.min.js"></script>
+<script src="https://github.com/js-cookie/js-cookie/releases/download/v3.0.1/js.cookie.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="../Games.js"></script>
+<script src="/home/client.js"></script>
+</html>

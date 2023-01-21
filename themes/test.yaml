@@ -1,0 +1,19 @@
+name: "Questions de test"
+questions:
+  - number: 1
+    quote: "Il se prénomme aypierre ! Il a le Minecraft qui tue !"
+    answer:
+      - "Mister MV"
+      - "mistermv"
+      - "MV"
+  - number: 2
+    quote: "Parce que quand je péte ça peut tuer tout un village"
+    answer:
+      - "MrGreatStephan"
+      - "Mr Great Stephan"
+      - "Mr GreatStephan"
+  - number: 3
+    quote: "Yes we can !"
+    answer:
+      - "Barack Obama"
+      - "Obama"

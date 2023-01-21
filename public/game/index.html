@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../imgs/logo.png" type="image/x-icon">
+    <title>Quote Sauce | In Game</title>
+</head>
+<body>
+    <div style="margin-top: 15%;" class="center">
+        <h1 id="title">La partie commence dans quelques instants...</h1>
+        <form id="answer-form" hidden>
+            <br><br>
+            <input type="text" id="answer-input" autocomplete="off">
+            <br><br>
+            <input type="submit" id="answer-submit" value="Valider">
+        </form>
+    </div>
+</body>
+<script src="/jquery/jquery.min.js"></script>
+<script src="https://github.com/js-cookie/js-cookie/releases/download/v3.0.1/js.cookie.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="../Games.js"></script>
+<script src="/game/client.js"></script>
+</html>

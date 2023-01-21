@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #FB9318;
+    font-family: 'Open Sans', sans-serif;
+}
+.center {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    margin-top: 5%;
+    padding: 2% 5%;
+    border-radius: 50px 50px;
+    background-color: #FEE5C8;
+}
+.center h1, .center h2 {
+    color: #FB9318;
+}
+form h2 {
+    font-size: 2em;
+}
+
+input[type=text], input[type=number], input[type=list] {
+    padding: 2% 3%;
+    font-size: 1em;
+    background-color: white;
+    color: #FB9318;
+    font-weight: bolder;
+    border: #FFFFFF 2px solid;
+    border-radius: 10px;
+    transition: border .1s ease-in-out;
+}
+input[type=text]:hover, input[type=number]:hover, input[type=list]:hover {
+    border: #FB9318 2px solid;
+}
+
+input[type=submit] {
+    padding: 2% 3%;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+    border: #FB9318 2px solid;
+    border-radius: 10px;
+    background-color: #FB9318;
+    cursor: pointer;
+    transition: border .1s ease-in-out;
+}
+input[type=submit]:hover {
+    border: #FFFFFF 2px solid;
+}
+
+input[disabled] {
+    color: lightgray;
+    border: gray 2px solid;
+    background-color: gray;
+    cursor: not-allowed;
+}
+input[disabled]:hover {
+    border: gray 2px solid;
+}
+
+.messasge {
+    font-style: italic;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+#code {
+    background-color: #FB9318;
+    border: #FB9318 3px solid;
+    cursor: copy;
+    transition: all .1s ease-in-out;
+}
+#code:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0) 3px solid;
+}
+
+#players {
+    padding: 2% 10%;
+    border-radius: 10px;
+    background-color: #fc951f;
+}
+#players p {
+    color: white;
+    font-size: 1.5em;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../imgs/logo.png" type="image/x-icon">
+    <title>Quote Sauce | Lobby</title>
+</head>
+<body>
+    <div class="center">
+        <h1 style="font-size: 4em;">Lobby</h1>
+        <h2>Code : <span id="code"></span></h2>
+        <form><h2>Joueurs :</h2></form>
+        <div id="players"></div>
+        <form id="options-form">
+            <h2>Options</h2>
+            <input type="list" list="themes" placeholder="Choisissez un thème" id="theme-input" required disabled>
+            <datalist id="themes">
+                <option value="test">Questions de test</option>
+                <option value="wankil">Wankil Studio</option>
+            </datalist>
+            <br><br>
+            <input style="width: 100%;" type="number" placeholder="Nombre de tours" id="round-input" min="2" max="25" required pattern="\d+" disabled>
+            <br><br>
+            <input type="submit" value="Démarrer la partie" id="start-game" disabled>
+        </form>
+    </div>
+</body>
+<script src="/jquery/jquery.min.js"></script>
+<script src="https://github.com/js-cookie/js-cookie/releases/download/v3.0.1/js.cookie.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="../Games.js"></script>
+<script src="/lobby/client.js"></script>
+<script src="/clipboard/clipboard.min.js"></script>
+</html>
